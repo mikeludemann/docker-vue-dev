@@ -15,5 +15,8 @@ RUN yarn install
 # Copy app files
 COPY . .
 
+# Port
+EXPOSE 8080
+
 # Start the app
 CMD [ "yarn", "run", "serve" ]
